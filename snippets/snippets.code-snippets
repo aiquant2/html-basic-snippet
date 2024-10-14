@@ -1,0 +1,40 @@
+{
+  "Basic HTML Table": {
+    "prefix": "!table",
+    "body": [
+      "<table>",
+      "  <tr>",
+      "    <th>Column 1</th>",
+      "    <th>Column 2</th>",
+      "    <th>Column 3</th>",
+      "  </tr>",
+      "  <tr>",
+      "    <td>Row 1, Cell 1</td>",
+      "    <td>Row 1, Cell 2</td>",
+      "    <td>Row 1, Cell 3</td>",
+      "  </tr>",
+      "  <tr>",
+      "    <td>Row 2, Cell 1</td>",
+      "    <td>Row 2, Cell 2</td>",
+      "    <td>Row 2, Cell 3</td>",
+      "  </tr>",
+      "</table>"
+    ],
+    "description": "A basic HTML table with three columns and two rows."
+  },
+  "Basic HTML Form": {
+    "prefix": "!form",
+    "body": [
+      "<form action=\"/submit\" method=\"post\">",
+      "  <label for=\"name\">Name:</label>",
+      "  <input type=\"text\" id=\"name\" name=\"name\">",
+      "  <br>",
+      "  <label for=\"email\">Email:</label>",
+      "  <input type=\"email\" id=\"email\" name=\"email\">",
+      "  <br>",
+      "  <input type=\"submit\" value=\"Submit\">",
+      "</form>"
+    ],
+    "description": "A basic HTML form with fields for name and email."
+  }
+}
