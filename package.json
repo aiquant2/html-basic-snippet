@@ -3,6 +3,8 @@
   "displayName": "Basic Snippets",
   "description": "collections of html snippets",
   "version": "0.0.1",
+  "publisher": "Gaurav raj",
+  "type": "module",
   "engines": {
     "vscode": "^1.94.0"
   },
@@ -10,12 +12,39 @@
   "categories": [
     "Snippets"
   ],
+  "main": "./out/extension.js",
+  "activationEvents": [],
   "contributes": {
     "snippets": [
       {
         "language": "html",
         "path": "./snippets/snippets.code-snippets"
       }
+    ],
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Say Hello"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.sayHello",
+        "key": "ctrl+shift+a",
+        "when": "editorTextFocus"
+      }
     ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -p ./ --watch",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "typescript": "^5.6.3",
+    "tslint": "^5.16.0"
   }
 }
