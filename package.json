@@ -12,6 +12,10 @@
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiquant2/html-basic-snippet.git"
+  },
   "main": "./out/extension.js",
   "activationEvents": [],
   "contributes": {
