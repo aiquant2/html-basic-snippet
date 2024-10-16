@@ -17,7 +17,9 @@
     "url": "https://github.com/aiquant2/html-basic-snippet.git"
   },
   "main": "./out/extension.js",
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:*"
+  ],
   "contributes": {
     "snippets": [
       {
@@ -27,14 +29,14 @@
     ],
     "commands": [
       {
-        "command": "extension.sayHello",
-        "title": "Say Hello"
+        "command": "helloworld.helloWorld",
+        "title": "Hello World"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.sayHello",
-        "key": "ctrl+shift+a",
+        "command": "helloworld.helloWorld",
+        "key": "ctrl+1",
         "when": "editorTextFocus"
       }
     ]
